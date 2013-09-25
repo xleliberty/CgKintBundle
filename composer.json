@@ -21,7 +21,7 @@
         "php":                      ">=5.3.2",
         "symfony/framework-bundle": ">=2.0.0",
         "symfony/symfony":          ">=2.0.0",
-        "raveren/kint":             "dev-master"
+        "xleliberty/kint":          "dev-master"
     },
 
     "minimum-stability": "dev",
@@ -31,6 +31,20 @@
             "Cg\\KintBundle": ""
         }
     },
+    "repositories": [
+            {
+            "type": "package",
+            "package": {
+              "version": "master",
+              "name": "xleliberty/kint",
+              "source": {
+                "url": "git@github.com:xleliberty/kint.git",
+                       "type": "git",
+                       "reference": "master"
+              }
+            }
+           }
+       ]
 
     "target-dir": "Cg/KintBundle"
 }
